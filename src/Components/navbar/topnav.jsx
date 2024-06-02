@@ -1,6 +1,6 @@
-import { TbBrandAndroid } from "react-icons/tb";
-import { PiAppleLogoLight } from "react-icons/pi";
-import { LiaWindows } from "react-icons/lia";
+import { TbBrandAndroid } from "react-icons/tb"; // Importing Android icon from react-icons
+import { PiAppleLogoLight } from "react-icons/pi"; // Importing Apple logo from react-icons
+import { LiaWindows } from "react-icons/lia"; // Importing Windows icon from react-icons
 
 const Topnav = () => {
   return (
@@ -10,11 +10,17 @@ const Topnav = () => {
       <div className="hover:underline cursor-pointer">Contact Us</div>
       <div>|</div>
       <div>Download App:</div>
-      <div className="text-[17px] cursor-pointer"><TbBrandAndroid/></div>
-      <div className="text-[17px] cursor-pointer"><PiAppleLogoLight/></div>
-      <div className="text-[17px] cursor-pointer"><LiaWindows/></div>
+      <div className="text-[17px] cursor-pointer">
+        <TbBrandAndroid />
+      </div>
+      <div className="text-[17px] cursor-pointer">
+        <PiAppleLogoLight />
+      </div>
+      <div className="text-[17px] cursor-pointer">
+        <LiaWindows />
+      </div>
     </div>
-  )
-}
+  );
+};
 
 export default Topnav;
